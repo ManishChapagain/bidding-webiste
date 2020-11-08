@@ -1,0 +1,71 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="container">
+    <div class="view-account">
+        <section class="module">
+            <div class="module-inner">
+                <div class="side-bar">
+                    <div class="user-info">
+                    </div>
+            		<nav class="side-menu">
+        			</nav>
+                </div>
+                <div class="content-panel">
+                    <h2 class="title">Profile</h2>
+                    <form class="form-horizontal" method="post">
+                        <fieldset class="fieldset">
+                            <h3 class="fieldset-title">Personal Info</h3>
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Full Name</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "fullname" id = "fullname" class="form-control" value="">
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Pan No</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "panno" id = "panno" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Street No</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "streetno" id = "streetno" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Zip Code</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "zipcode" id = "zipcode" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Phone No</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "phoneno" id = "phoneno"class="form-control" value="">
+                                    <input type="text" name = "phoneno2" id = "phoneno2"class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Occupation</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" name = "occupation" id = "occupation" class="form-control" value="Farmer">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <div class="form-group">
+                            <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                <input class="btn btn-primary" type="submit" value="Update Profile">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

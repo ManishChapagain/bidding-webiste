@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% block content %}
+<section class="pb-5 header text-center">
+    <div class="container py-2 text-black">
+        <header class="py-5">
+            <h1 class="display-4">Your Demands</h1>
+            <p class="font-italic mb-1">Prototype</p>
+        </header>
+
+
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-5">
+
+                        <!-- Responsive table -->
+                        <div class="table-responsive">
+                            <table class="table m-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Crop</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	{% for x in account %}
+                                    <tr>
+                                        <th scope="row">{{ loop.index }}</th>
+                                        <td>{{ x['crop_name'] }}</td>
+                                        <td>{{ x['quantity'] }}</td>
+                                        <td>{{ x['datee'] }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
